@@ -1,0 +1,31 @@
+    {{>head
+        con = "false"
+        banner="/img/fondo-parcial-img-1.jpg"
+        text1="servicios"
+        text2="Quirófanos."
+        section="servicios"
+    }}
+
+    <div id="servicios" class="container-fluid">
+        <div class="container">
+
+                <div id="u-emergencias" class="row animalo" data-animate-effect="fadeIn">
+
+                    <h1>Quirófanos</h1>
+                    <p>Contamos con dos quirófanos completamente equipados para atender cualquier cirugía abierta o laparoscópica.</p>
+
+                    <div class="slide-photos _shadow-bg-light-l">
+                        {{>sliders/slider}}
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-quirofanos", "._link-servicios");
+        }, 500);
+
+    </script>

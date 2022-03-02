@@ -1,0 +1,109 @@
+    <section id="planes-prenatales" class="container-fluid" style="background-image: url(/img/especialidades/especialities-bg.jpg);">
+        <div class="section__header">
+            <h2 class="section__title">Planes Prenatales</h2>
+            <p class="section__icon" data-animate-effect="fadeIn"> --^⌄⌃⌄-- <i class="fas fa-user-md"></i> --⌄⌃⌄^-- </p>
+            <h3 class="section__subtitle pb-4">Conoce nuestros planes prenatales para parto en agua, parto normal y cesárea</h3>
+        </div>
+
+        <div class="container cards">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 d-flex justify-content-center">
+
+                <div class="col">
+                    {{>card-with-img
+                        img="/img/partos/parto-normal.jpg"
+                        text1="Atención de Parto Normal"
+                        text2="Planifica su llegada desde el primer momento, anticipa los gastos por la llegada de tu bebé. En Hospital Farela contamos con la mejor atención en Parto Normal, conoce nuestra sala de partos y nuestras diferentes opciones en habitaciones."
+                        url="/gallery/habitaciones"
+                        value="Habitaciones"
+                    }}
+                </div>
+
+                <div class="col">
+                    {{>card-with-img
+                        img="/img/partos/cesarea.jpg"
+                        text1="Atención de Cesáreas"
+                        text2="Queremos ser parte de tu mayor felicidad, la llegada de un nuevo miembro en la familia siempre es algo especial."
+                        text3="Contamos con excelentes planes de pago para atención de cesareas, conoce nuestras instalaciones y anticipa los gastos por la llegada de tu futuro bebé."
+                        url="/gallery/habitaciones"
+                        value="Habitaciones"
+                    }}
+                </div>
+        
+                <div class="col">
+                    {{>card-with-img
+                        img="/img/partos/parto-en-agua.jpg"
+                        text1="Atención de Parto en Agua"
+                        text2="En Hospital Farela contamos con atención de parto normal en Agua. Unos de los beneficios es que Favorece la relajación de la madre debido a la pérdida de sensación de gravedad y la temperatura del agua facilitando la dilatación. Haz tu cotización"
+                        url="/servicios/unidad-parto-en-agua"
+                        value="Habitacion"
+                    }}
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="container info">
+
+            <div class="row row-cols-1 row-cols-md-2 g-4 d-flex justify-content-center">
+                <div class="col animalo" data-animate-effect="fadeIn">
+                    <h5>TODOS LOS PLANES INCLUYEN</h5>
+                    <ul>
+                        <li>Alojamiento.</li>
+                        <li>Alimentación.</li>
+                        <li>Servicio de enfermeria.</li>
+                        <li>Medicamento y materiales basicos.</li>
+                        <li>Sala de partos.</li>
+                        <li>Sala de Operaciones (Cesárea).</li>
+                        <li>Sala de Recuperación.</li>
+                        <li>Cuidado de Recien Nacido.</li>
+                        <li>Tipeo Sanguineo (Recien Nacido).</li>
+                        <li>Persona Extra en sala de operaciones o Sala de partos.</li>
+                    </ul>
+                </div>
+
+                <div class="col animalo" data-animate-effect="fadeIn">
+                    <h5>EXCLUSIÓN DEL PLAN</h5>
+                    <ul>
+                        <li>Materiales y Medicamentos adicionales fuera del listado.</li>
+                        <li>Complicaciones maternas y/o del recién nacido.</li>
+                        <li>Anestesia Epidural.</li>
+                        <li>Honorarios Médicos.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-xl-8 animalo mb-5" data-animate-effect="fadeInUp">
+                    <div class="especificaciones bg-white mt-5 p-5 _shadow-bg-light-l">
+                        <h5> ESPECIFICACIONES DE NUESTROS PLANES PRENATALES</h5>
+                        <ul>
+                            <li>
+                                Nuestro plan prenatal permite realizar su pago a travez de cuotas, estas se establecen desde el primer mes de embarazo.
+                            </li>
+                            <li>
+                                El pago total de su plan prenatal se puede cancelar hasta en 7 cuotas.
+                            </li>
+                            <li>
+                                Si el parto normal llegara a convertirse en cesárea, la diferencia de su cuenta hospitalaria deberá ser cancelada al momento de ser dada de alta.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-4 d-flex justify-content-center align-items-center">
+                    <iframe class="iframe-prenatal _shadow-bg-light-l animalo" data-animate-effect="fadeInUp" src="https://design-2u.com/tools/email-farela/prenatal.html" frameborder="0"></iframe>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-prenatal");
+        }, 500);
+
+    </script>

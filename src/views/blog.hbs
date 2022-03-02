@@ -1,0 +1,17 @@
+    {{>head
+        con = "false"
+        banner="/img/fondo-parcial-img-4.jpg"
+        text1="Nuestro Blog"
+        text2="Articulos, noticias y muchos consejos de salud."
+        section="blog"
+    }}
+
+    {{>articulos}}
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-blog");
+        }, 500);
+
+    </script>

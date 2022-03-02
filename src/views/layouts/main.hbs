@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{!-- <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"> --}}
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/animate.css">
+        <link rel="stylesheet" href="/css/universal-parallax.min.css">
+        {{!-- <link rel="stylesheet" href="/css/lightbox.css"> --}}
+        <link rel="stylesheet" href="/css/venobox.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        
+        <title>Hospital Farela</title>
+    </head>
+    <body>
+        {{>top-bar}}
+        {{>navbar}}
+
+        {{{ body }}}
+        
+        {{>footer
+            link1="/"
+            link2="/conocenos"
+            link3="/hospitalizacion"
+            link4="/contactanos"
+        }}
+
+
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/waypoints.js"></script>
+        <script src="/js/universal-parallax.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        {{!-- <script src="/js/lightbox.js"></script> --}}
+        <script src="/js/venobox.min.js"></script>
+        <script src="/js/script.js"></script>
+
+        <script>
+
+            new universalParallax().init({
+                speed: 4.0
+            });
+
+
+            $(document).ready(function() {
+                $('.venobox').venobox({
+                    //framewidth : '100%',                            // default: ''
+                    //frameheight: '100%',                            // default: ''
+                    //arrowsColor: '#96110c',
+                    spinner: 'cube-grid',
+                    spinColor: '#fbb802',
+                    border: '5px', // default: '0'
+                    bgcolor: '#fbb802', // default: '#fff'
+                    titleattr: 'data-title', // default: 'title'
+                    numeratio: true, // default: false
+                    infinigall: true, // default: false
+                    share: [] // default: []
+                });
+            });
+
+        </script>
+
+    </body>
+</html>

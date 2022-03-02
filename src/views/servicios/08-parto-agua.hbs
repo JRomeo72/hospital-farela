@@ -1,0 +1,41 @@
+    {{>head
+        con = "false"
+        banner="/img/fondo-parcial-img-1.jpg"
+        text1="servicios"
+        text2="Sala de Partos en agua."
+        section="servicios"
+    }}
+
+    <div id="servicios" class="container-fluid">
+        <div class="container">
+
+                <div id="u-emergencias" class="row animalo" data-animate-effect="fadeIn">
+
+                    <h1>Sala de Partos en agua</h1>
+                    <p>Esta sala es un área totalmente acondicionada con conexión a una habitación en la que la paciente durante el trabajo de parto puede perfectamente movilizarse. El área consta de una piscina de partos especial la cual es cubierta con un lyner descartable utilizado en cada trabajo de parto, esta es llenada con agua a una temperatura similar a la que el bebé mantiene dentro del vientre de la madre.<br><br>
+                        <strong>Entre los beneficios de esta opción de partos podemos enlistar los siguientes:</strong>
+                    </p>
+                    <ul>
+                        <li>Disminuye en un 98% la necesidad de realizar episiotomía.</li>
+                        <li>Favorece la relajación de la madre debido a la pérdida de sensación de gravedad y la temperatura del agua facilitando la dilatación.</li>
+                        <li>La facilidad de cambiar de posición dentro del agua evita a que la madre se agote y el movimiento ayuda a que el bebé se acomode.</li>
+                        <li>Se acorta el trabajo de parto lo que disminuye la probabilidad de sufrimiento fetal.</li>
+                        <li>El bebé sale a un ambiente semejante al que ha estado durante los 9 meses, por lo tanto la transición es más suave</li>
+                    </ul>
+
+                    <div class="slide-photos _shadow-bg-light-l">
+                        {{>sliders/slider}}
+                    </div>
+
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-parto", "._link-servicios");
+        }, 500);
+
+    </script>

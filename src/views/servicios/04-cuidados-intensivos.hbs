@@ -1,0 +1,34 @@
+    {{>head
+        con = "false"
+        banner="/img/fondo-parcial-img-1.jpg"
+        text1="servicios"
+        text2="Cuidados intensivos al recién nacido."
+        section="servicios"
+    }}
+
+    <div id="servicios" class="container-fluid">
+        <div class="container">
+
+                <div id="u-emergencias" class="row animalo" data-animate-effect="fadeIn">
+
+                    <h1>Cuidados intensivos al recién nacido</h1>
+                    <p>Después del parto, la prioridad es brindarles los mejores cuidados a la mamá y su bebé, sin embargo, también se debe comprender que puede existir la posibilidad de complicaciones en el recién nacido a pesar que su madre hubiese tenido todas las precauciones recomendadas.<br><br>
+                        En ese sentido, algunos bebés necesitan del servicio de cuidados intensivos. La mayoría de ellos que ingresan a esta área son prematuros, tienen bajo peso o padecen de trastornos médicos que requieren de atención especializada.<br><br>
+                        A pesar de todo ello, cada recién nacido debe ser analizado para determinar si requiere de estos cuidados.<br><br>
+                        Nos complace ser un hospital con el equipo y tecnología necesaria para este tipo de cuidados al bebé. Además contamos con el recurso humano totalmente capacitado para atender cualquier estado de salud de su hijo.</p>
+
+                    <div class="slide-photos _shadow-bg-light-l">
+                        {{>sliders/slider}}
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-recien", "._link-servicios");
+        }, 500);
+
+    </script>

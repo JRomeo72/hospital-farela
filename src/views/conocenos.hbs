@@ -1,0 +1,121 @@
+    {{>head
+        con = "true"
+        banner="/img/fondo-parcial-img-2.jpg"
+        text1="Conocenos"
+        text2="Nuestra historia, principios, valores, misión y visión."
+        section="center"
+    }}
+
+    <div id="conocenos-section" class="container-fluid" style="background-image:url(/img/background-conocenos.jpeg);">
+        <div class="mask"></div>
+
+        <div class="all-containers">
+
+            <div class="container">
+        
+                <div class="history">
+                    <div class="building--container animalo" data-animate-effect="fadeInUp">
+                        <div class="building--img _shadow-bg-light-l">
+                            <img class="_shadow-bg-light-l" src="/img/conocenos/edificio.jpeg" alt="historia">
+                            <div class="title">
+                                <h2>Historia</h2>
+                            </div>
+                            <div class="description">
+                                <p>
+                                    La empresa inició en septiembre de 1993. Desde hace 29 años, dos médicos visionarios, los doctores y esposos Juan Farela y Ana de Farela, fundaron el Hospital. Los fines y objetivos que en aquel entonces motivaron a estos profesionales aún se mantienen.<br><br>
+                                    Entre estos cabe mencionar: ofrecer al gremio médico y población en general, servicios integrales de salud, con calidad de atención, tecnología de punta y accesibilidad económica de los servicios; contribuyendo con esto al bienestar social y el mantenimiento de la salud.<br><br>
+                                    Se inició con la habilitación de dos habitaciones, posteriormente fueron tres y hasta este 2015 ya son ocho habitaciones. Comenzó con una sala de partos, luego un quirófano.<br><br>
+                                    Se ha ampliado en infraestructura con dos quirófanos, dos salas de partos. Se inició atendiendo pacientes de ginecología y posteriormente se incursionó en otras especialidades: cirugía general, cirugía videolaparoscópica (por láser). En los últimos años se ha estado incursionando en la cirugía laparoscópica ginecológica, que la hacen médicos por medio de una alianza.<br><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="mision-vision">
+                <div class="row row-cols-1 row-cols-lg-2 g-5">
+                    <div class="col">
+                        {{>card-not-img
+                            icon="fas fa-rocket"
+                            text1="Misión"
+                            text2="Proporcionar servicios hospitalarios con calidad técnica y humana que haga sentir a nuestros clientes como en casa, a través de la integración de todo el personal comprometido a alcanzar la satisfacción de las necesidades demandadas."
+                        }}
+                    </div>
+                    <div class="col">
+                        {{>card-not-img
+                            icon="fas fa-chart-line"
+                            text1="Visión"
+                            text2="Ser una institución que proporcione una atención hospitalaria enfocada en la Solidaridad, Calidez y Atención Personalizada, que le permita a nuestros clientes el restablecimiento de su salud a través de la excelencia en el servicio de un equipo humano comprometido."
+                        }}
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+        
+                <div class="calidad py-5">
+                    <div class="foto--container animalo" data-animate-effect="fadeIn">
+                        <div class="foto--img _shadow-bg-light-l">
+                            <img class="_shadow-bg-light-l" src="/img/conocenos/calidad.jpeg" alt="calidad">
+                            <div class="title">
+                                <h2>Politicas de Calidad</h2>
+                            </div>
+                            <div class="description">
+                                <p>Exceder las necesidades y expectativas requeridas por nuestros clientes (médicos y pacientes), estableciendo, desarrollando, manteniendo y mejorando un sistema de gestión de la calidad que incorpore a nuestro personal, como también mejorar las instalaciones y ofrecer tecnología de punta, para la prestación de servicios hospitalarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="principios py-5">
+                    <div class="foto--container animalo" data-animate-effect="fadeIn">
+                        <div class="foto--img _shadow-bg-light-l">
+                            {{>sliders/slider}}
+                            <div class="title">
+                                <h2>Nuestros Valores</h2>
+                            </div>
+                            <div class="description">
+                                <p>Hospital Farela sabe que la prioridad son sus pacientes, por lo que, para regirnos con una excelente atención en todos nuestros servicios y personal médico, nuestros lineamientos están basados en valores institucionales y humanos.</p>
+                                <div class="valores-container">
+                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                                        <div class="col">
+                                            <div class="valor--item _shadow-bg-light-m animalo" data-animate-effect="fadeInUp">Responsabilidad</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="valor--item _shadow-bg-light-m animalo" data-animate-effect="fadeInUp">Espíritu de servicio</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="valor--item _shadow-bg-light-m animalo" data-animate-effect="fadeInUp">Proactividad</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="valor--item _shadow-bg-light-m animalo" data-animate-effect="fadeInUp">Fidelidad</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="valor--item _shadow-bg-light-m animalo" data-animate-effect="fadeInUp">Lealtad</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="valor--item _shadow-bg-light-m animalo" data-animate-effect="fadeInUp">Entrega</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-conocenos");
+        }, 500);
+
+    </script>

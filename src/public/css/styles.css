@@ -1,0 +1,1636 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Red+Hat+Text:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: #2898CB;
+	--primary-op: 40 152 203;
+	--secundary: #1D2A55;
+	--secundary-op: 29 42 85;
+	--hover: #F2B847;
+	--light: #E4F2FE;
+	--light-op: 228 242 254;
+	--dark: #1F1F1F;
+	--dark-op: 0.12 0.12 0.12;
+	--white: white;
+	--white-op: 255 255 255;
+	--shadow-color-bg-light: 0deg 0% 30%;
+	--shadow-color-bg-dark: 0deg 0% 0%;
+}
+
+html {
+	background-color: #eee;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #929292;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Red Hat Text', sans-serif;
+	line-height: 1.2;
+	font-weight: 700;
+	color: var(--secundary);
+}
+
+p {
+	text-align: justify;
+}
+
+.creditos {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    text-align: end;
+    /* position: relative;
+    padding-right: 20px;
+    transform: translateY(-30px); */
+}
+
+.creditos a {
+    /* background-color: black; */
+    color: #929292;
+    /* padding: 5px; */
+    /* position: absolute; */
+}
+
+/*! ***************************************/
+/*? ****** Estilos de head global *********/
+/*! ***************************************/
+
+.section__header {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section__title {
+	font-size: 36px;
+	padding-bottom: 10px;
+}
+
+.section__subtitle {
+	font-size: 55px;
+}
+
+.section__icon {
+	font-size: calc(1rem + 0.5vw)!important;
+	color: var(--secundary);
+	text-align: center;
+}
+
+.section__icon i {
+	font-size: calc(2rem + 0.8vw);
+	margin: 0 20px;
+	color: var(--primary);
+}
+
+@media (max-width: 1920px) {
+
+    .section__title {
+        font-size: calc(1rem + 1vw);
+    }
+    
+    .section__subtitle {
+        font-size: calc(1.7rem + 1.5vw);
+    }
+
+}
+
+/*! ***************************************/
+/*? ****** Estilos de head section ********/
+/*! ***************************************/
+
+#head.container-fluid {
+    position: relative;
+    padding-bottom: 75px;
+    background-position: right;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+#head.container-fluid {
+    background-color: #C8CAC7;
+}
+
+#head.container-fluid.servicios {
+    background-color: #ffffff;
+}
+
+#head.container-fluid.especialidades {
+    background-color: #99D3DE;
+}
+
+#head.container-fluid.blog {
+    background-color: #779BC5;
+}
+
+#head .mask {
+    position: absolute;
+    background-color: rgba(var(--primary-op) / 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#head .contenedor {
+    /* display: flex; */
+    padding-top: 70px;
+    /* align-items: center; */
+}
+
+/* #head .section__header h2, */
+#head .section__header h3 {
+/* #head .section__header p { */
+    color: var(--light)!important;
+}
+
+#head .section__title {
+    color: var(--secundary)!important;
+    text-transform: uppercase;
+}
+
+#head .section__icon {
+    color: var(--secundary);
+}
+
+#head .section__icon i {
+    margin: 0 20px;
+    color: var(--white);
+}
+
+#head .true.padin-bottom {
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 767px) {
+    #head.container-fluid.servicios {
+        background-position: left;
+    }
+    #head.container-fluid {
+        background-position: center;
+    }
+}
+
+/*! ***************************************/
+/*? ******** Estilos de sombras ***********/
+/*! ***************************************/
+
+._shadow-bg-light-m {
+    box-shadow:
+		1px 2px 2px hsl(var(--shadow-color-bg-light) / 0.1),
+		2px 4px 4px hsl(var(--shadow-color-bg-light) / 0.1),
+		4px 8px 8px hsl(var(--shadow-color-bg-light) / 0.1)
+}
+
+._shadow-bg-light-l {
+    box-shadow:
+		1px 2px 2px hsl(var(--shadow-color-bg-light) / 0.1),
+		2px 4px 4px hsl(var(--shadow-color-bg-light) / 0.1),
+		4px 8px 8px hsl(var(--shadow-color-bg-light) / 0.1),
+		8px 16px 16px hsl(var(--shadow-color-bg-light) / 0.1),
+		16px 32px 32px hsl(var(--shadow-color-bg-light) / 0.1)
+}
+
+._shadow-bg-light-b {
+	box-shadow:
+		0px 2px 2px hsl(var(--shadow-color-bg-light) / 0.1),
+		0px 4px 4px hsl(var(--shadow-color-bg-light) / 0.1),
+		0px 8px 8px hsl(var(--shadow-color-bg-light) / 0.1),
+		0px 16px 16px hsl(var(--shadow-color-bg-light) / 0.1),
+		0px 32px 32px hsl(var(--shadow-color-bg-light) / 0.1)
+}
+
+._shadow-bg-light-i-t {
+	box-shadow:
+		0px 2px 2px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px 4px 4px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px 8px 8px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px 16px 16px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px 32px 32px hsl(var(--shadow-color-bg-light) / 0.2) inset
+}
+
+._shadow-bg-light-i-b {
+	box-shadow:
+		0px -2px 2px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px -4px 4px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px -8px 8px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px -16px 16px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px -32px 32px hsl(var(--shadow-color-bg-light) / 0.2) inset
+}
+
+.espacio {
+    height: 2000px;
+}
+
+.animalo {
+    opacity: 0;
+}
+
+/*! ***************************************/
+/*? ******** Estilos de top-bar ***********/
+/*! ***************************************/
+
+#top-bar.container-fluid {
+    padding: 10px;
+    overflow: hidden;
+}
+
+#top-bar .contenedor {
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#top-bar .logo {
+    width: 40%;
+    max-width: 150px;
+    margin-right: 20px;
+}
+ #top-bar .logo-img {
+     width: 100%;
+ }
+
+#top-bar .left {
+    width: 100%;
+}
+
+#top-bar .info i {
+    font-size: 22px;
+    color:var(--primary);
+
+    padding: 4px;
+    font-weight: bold;
+}
+
+#top-bar .info--item:nth-child(1),
+#top-bar .info--item:nth-child(2) {
+    border-right: 2px solid rgba(0, 0, 0, 0.158);
+    margin-right: 10px;
+}
+
+#top-bar .info--item--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    border: 1px solid var(--primary);
+}
+
+#top-bar p {
+    margin: auto;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+#top-bar .socials i {
+    font-size: 24px;
+    color: var(--primary);
+    margin: 0 20px;
+    transition: color 350ms ease;
+}
+
+#top-bar .socials i:hover {
+    color: #F2B847;
+}
+
+@media screen and (max-width: 880px) {
+
+    #top-bar .info i {
+        font-size: 20px;
+        padding: initial;
+        margin: 0!important;
+        font-weight: bold;
+    }
+
+    #top-bar .info-items {
+        display: block!important;
+        width: 200px;
+    }
+
+    #top-bar .info--item {
+        margin-bottom: 10px;
+        border: none!important;
+    }
+
+    #top-bar .info--item--icon {
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        height: initial;
+        /* padding-top: 5px!important; */
+    }
+
+}
+
+/*! ***************************************/
+/*? ******** Estilos del NAVBAR ***********/
+/*! ***************************************/
+
+#nav-bar.navbar {
+    background-color: rgba(var(--light-op) / 0.3)!important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 3;
+    transition: background-color 350ms ease;
+}
+
+#nav-bar .navbar-brand {
+    display: none;
+}
+
+#nav-bar .logo {
+    position: relative;
+}
+
+#nav-bar .text1 {
+    position: absolute;
+    padding-left: 36px;
+}
+
+#nav-bar .display-6 {
+    font-size: 20px;
+}
+
+#nav-bar .display-5 {
+    font-size: 58px;
+}
+
+#nav-bar li.nav-item {
+    margin-left: 20px;
+}
+
+#nav-bar li.nav-item > a {
+    color: var(--secundary)!important;
+    font-size: 16px!important;
+    font-weight: bold;
+    transition: all 350ms ease;
+    border-bottom: 2px solid rgba(233, 24, 24, 0);
+
+}
+
+#nav-bar li.nav-item > a:hover {
+    color: var(--primary)!important;
+    border-bottom: 2px solid var(--primary);
+
+}
+
+#nav-bar li.nav-item > a.active {
+    color: var(--primary)!important;
+    border-bottom: 2px solid var(--primary);
+}
+
+#nav-bar .dropdown-menu {
+    background-color: var(--light);
+}
+
+#nav-bar .dropdown-menu .dropdown-item {
+    color: var(--primary);
+    font-weight: bold;
+    padding: 5px 20px;
+    transition: all 350ms ease;
+}
+
+#nav-bar .dropdown-menu .dropdown-item:hover {
+    background-color: var(--secundary);
+    color: var(--white);
+}
+
+#nav-bar .dropdown-menu .dropdown-item.active {
+    background-color: var(--secundary);
+    color: var(--white);
+}
+
+#nav-bar.switchColor {
+    position: sticky;
+    top: 0;
+    background-color: var(--secundary)!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav-bar.switchColor .navbar-brand h2,
+#nav-bar.switchColor .navbar-brand p {
+    color: var(--light);
+    transition: color 350ms ease;
+}
+
+#nav-bar.switchColor li.nav-item > a {
+    color: var(--light)!important;
+    /* transition: all 350ms ease;
+    border-bottom: 2px solid rgba(233, 24, 24, 0); */
+
+}
+
+#nav-bar.switchColor li.nav-item > a:hover {
+    color: var(--primary)!important;
+    /* border-bottom: 2px solid var(--primary); */
+
+}
+
+#nav-bar.switchColor .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(40, 152, 203)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#nav-bar.switchColor .custom-toggler.navbar-toggler {
+    border-color: #2898CB;
+}
+
+@media screen and (max-width: 991px) {
+
+    #nav-bar .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    #nav-bar .navbar-brand {
+        display: block;
+    }
+}
+
+/*! ***************************************/
+/*? ******** Estilos del Slider ***********/
+/*! ***************************************/
+
+#slider-section.container-fluid {
+    position: relative;
+    padding: 0;
+}
+
+#slider-section .container__slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider-section .slider {
+    display: flex;
+    width: 400%;
+    margin-left: -100%;
+}
+
+#slider-section .slider__section {
+    width: 100%;
+    min-height: 300px;
+    max-height: 700px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+#slider-section .slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#slider-section .slider__btn {
+    width: 45px;
+    height: 100%;
+    padding: 0;
+    /* background-color: rgba(109, 106, 106, 0.459); */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    text-align: center;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider-section .slider__btn--prev {
+    left: calc(1% + 3.5vw);
+}
+
+#slider-section .slider__btn--next {
+    right: calc(1% + 3.5vw);
+}
+
+#slider-section .slider__btn:hover > i {
+    color: var(--primary);
+}
+
+#slider-section .slider__caption {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 10vw;
+    left: 16%;
+    width: 70%;
+    max-width: 650px;
+    z-index: 1;
+    /* border: solid 1px #C8CAC7; */
+
+}
+
+#slider-section .slider__caption h2 {
+    font-size: 55px;
+    color: var(--primary);
+    background-color: rgba(var(--white-op) / 0.7);
+    padding: 10px 30px;
+    border-radius: 5px;
+    animation-delay: 0.5s;
+    margin-bottom: 20px!important;
+
+}
+
+#slider-section .slider__caption p {
+    font-size: 31px;
+    color: var(--white);
+    background-color: rgba(var(--primary-op) / 0.8);
+    padding: 10px 30px;
+    border-radius: 5px;
+    animation-delay: 1.2s;
+}
+
+#slider-section .hidden {
+    display: none;
+}
+
+#slider-section .mask {
+    /* background-color: rgba(0, 0, 255, 0.342); */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+@media (max-width: 1920px) {
+
+    #slider-section .slider__caption h2 {
+        font-size: calc(1rem + 2vw);
+    }
+    
+    #slider-section .slider__caption p {
+        font-size: calc(0.7rem + 1vw);
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #slider-section .slider__btn--prev {
+        left: 0;
+    }
+
+    #slider-section .slider__btn--next {
+        right: 0;
+    }
+}
+
+/*! ***************************************/
+/*? ****** Estilos de los Sliders *********/
+/*! ***************************************/
+
+.slide-photos {
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*! ***************************************/
+/*? ******* Estilos card-not-img **********/
+/*! ***************************************/
+
+.Card {
+    max-width: 500px;
+    transition: all 350ms ease;
+    border-radius: 5px;
+}
+
+.Card .icon {
+    font-size: 46px;
+    color: var(--primary);
+    margin-right: 20px;
+}
+
+.Card:hover {
+    background-color: var(--secundary)!important;
+    color: var(--light);
+}
+
+.Card:hover .icon,
+.Card:hover h3,
+.Card:hover h5 {
+    color: var(--light);
+}
+
+/*! ***************************************/
+/*? ***** Estilos qualities-section *******/
+/*! ***************************************/
+
+#qualities-section.container-fluid {
+    transform: translateY(-80px);
+    padding: 0px;
+    z-index: 2;
+}
+
+#qualities-section .container {
+    position: relative;
+}
+
+#qualities-section .col {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+    #qualities-section .container {
+        transform: initial;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/*! ***************************************/
+/*? ***** Estilos nosotros-section  *******/
+/*! ***************************************/
+
+#nosotros-section.container-fluid {
+    padding: 0;
+    margin-bottom: 80px;
+}
+
+#nosotros-section .foto-contenedor {
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+#nosotros-section .foto {
+    background-color: var(--primary);
+}
+
+#nosotros-section img {
+    width: 100%;
+    max-width: 350px;
+    transform: translate(20px, -20px);
+}
+
+#nosotros-section .texto {
+    max-width: 400px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #nosotros-section .col {
+        justify-content: center!important;
+    }
+
+    #nosotros-section .foto-contenedor {
+        position: absolute;
+        margin: 5px;
+    }
+
+    #nosotros-section .texto {
+        width: 95%;
+        max-width: 350px;
+        background-color: rgba(var(--light-op) / 0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        border: 1px solid #dee2e6;
+        z-index: 1;
+        margin-top: 350px;
+        box-shadow:
+            1px 2px 2px hsl(var(--shadow-color-bg-light) / 0.1),
+            2px 4px 4px hsl(var(--shadow-color-bg-light) / 0.1),
+            4px 8px 8px hsl(var(--shadow-color-bg-light) / 0.1),
+            8px 16px 16px hsl(var(--shadow-color-bg-light) / 0.1),
+            16px 32px 32px hsl(var(--shadow-color-bg-light) / 0.1)
+    }
+
+    #nosotros-section .texto p {
+        color: var(--dark);
+    }
+}
+
+.display-7{ font-size:calc(0.8rem + 1.2vw) }
+@media (min-width:1200px){ .display-7{font-size:1.7rem} }
+
+/*! ***************************************/
+/*? ********* Estilos Parallax  ***********/
+/*! ***************************************/
+
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 500px;
+	left: 0;
+	/* overflow: hidden; */
+	position: absolute;
+	/* top: 0; */
+	width: 100%;
+	z-index: 1;
+    background-color: #2898CB;
+}
+
+.parallax {
+    background-image: url('/img/parallax-img.jpeg');
+	position: fixed;
+	/* top: 0; */
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+
+
+	/* BG behaviour */
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax__container .mask {
+    background-color: rgba(var(--dark-op) / 0.2);
+    height: 100%;
+    /* padding: 12rem 0; */
+    position: relative;
+    z-index: 100;
+}
+
+.parallax__container .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parallax__container .contenido {
+    padding: 15px 40px;
+    border-radius: 5px;
+    max-width: 1000px;
+    background-color: rgba(var(--dark-op) / 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.parallax__container h2 {
+    font-size: 36px;
+    color: var(--light);
+}
+
+.parallax__container p{
+    font-size: 20px;
+}
+
+
+
+/*! ***************************************/
+/*? ******* Estilos card-with-img *********/
+/*! ***************************************/
+
+.card {
+    max-width: 450px!important;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card .card-body {
+    padding: 10px 5px;
+}
+
+.card .btn {
+    background-color: var(--primary);
+    transition: background-color 650ms ease;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+}
+
+.card .btn:hover {
+    background-color: var(--secundary);
+}
+
+/*! ***************************************/
+/*? **** Estilos specialities-section *****/
+/*! ***************************************/
+
+#specialities-section.container-fluid,
+#blog-section.container-fluid {
+    padding: 50px 0 100px 0;
+}
+
+#specialities-section .section__title {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+#specialities-section .col,
+#blog-section .col {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+    #specialities-section .container,
+    #blog-section .container {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/*! ***************************************/
+/*? ********* Estilos wc-footer ***********/
+/*! ***************************************/
+
+#footer.container-fluid {
+    position: relative;
+    background-position: top center;
+    background-size: cover;
+    padding: 20px;
+}
+
+#footer .mask {
+    background-color: rgba(var(--secundary-op) / 1);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#footer .container {
+    position: inherit;
+    z-index: 1;
+    padding: 80px 0 50px 0;
+}
+
+#footer .col {
+    /* padding: 20px; */
+    margin-bottom: 50px;
+}
+
+#footer h2, #footer h4, #footer p, #footer a {
+    color: var(--light);
+}
+
+#footer h4 {
+    margin-bottom: 20px;
+}
+
+/*  Bloque 1 */
+#footer .logo {
+    position: relative;
+}
+
+#footer .logo__text1 {
+    position: absolute;
+    padding-left: 36px;
+}
+
+#footer .display-6 {
+    font-size: 20px;
+}
+
+#footer .display-5 {
+    font-size: 58px;
+}
+
+#footer .icons i {
+    font-size: 20px;
+    color: var(--light);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 9px;
+    margin-right: 10px;
+}
+
+#footer .icons i:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    transition: all 350ms ease;
+    border: 1px solid var(--primary);
+    /* border: 1px solid rgba(var(--light-op) / 0); */
+}
+
+/* Bloque 2 */
+
+#footer ul {
+    padding: 0!important;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#footer a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 2;
+}
+
+#footer a:hover {
+    color: var(--primary);
+    transition: color 350ms ease;
+}
+
+/* Bloque 3 */
+#footer .info__location__icon {
+    color: var(--primary);
+}
+
+/* Bloque 4 */
+#footer .art {
+    display: flex;
+    margin-bottom: 10px;
+    /* justify-content: space-between; */
+}
+
+#footer .art .img {
+    border-radius: 3px;
+    width: 20%;
+    height: 60px;
+    /* background-image: url(/img/especialidades/ortopeda_500.jpg); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+#footer .art .img-1 {
+    background-image: url(/img/blog/img-art02.jpg);
+}
+
+#footer .art .img-2 {
+    background-image: url(/img/blog/img-art01.jpg);
+}
+
+#footer .art .caption {
+    font-size: initial;
+    width: 70%;
+    margin-left: 10px;
+}
+
+#footer .art .caption p {
+    line-height: 1.2;
+    text-align: initial;
+    margin: 0;
+}
+
+#footer .art .caption p.autor,
+#footer .art .caption p.fecha {
+    font-size: 12px;
+    color: var(--primary);
+}
+
+#footer .copyright {
+    font-weight: lighter;
+}
+
+@media (min-width: 1200px) {
+    ._col-2 {
+        width: 18%;
+        padding-left: 30px;
+    }
+    ._col-1, ._col-3 {
+        width: 27%;
+    }
+    ._col-4 {
+        width: 28%;
+    }
+}
+
+/*! ***************************************/
+/*? ***** Estilos conocenos section *******/
+/*! ***************************************/
+
+
+#conocenos-section.container-fluid {
+    padding: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    position: relative;
+}
+
+#conocenos-section .all-containers {
+    position: relative;
+    transform: translateY(-150px);
+}
+
+#conocenos-section .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: rgba(var(--secundary-op) / 0.5); */
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+}
+
+#conocenos-section .history {
+    padding-bottom: 100px;
+}
+
+#conocenos-section .building--container,
+#conocenos-section .foto--container {
+    display: flex;
+    justify-content: center;
+
+}
+
+#conocenos-section .building--img,
+#conocenos-section .foto--img {
+    padding: 10px;
+    max-width: 1000px;
+    border-radius: 5px;
+    background-color: rgba(var(--white-op) / 1);
+    backdrop-filter: blur(10px);
+}
+
+#conocenos-section .building--img img,
+#conocenos-section .foto--img img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}
+
+#conocenos-section .description, .title {
+    padding: 5px 5px;
+}
+
+#conocenos-section .mision-vision {
+    background-color: #F4F4F4;
+    padding: 100px 10px 100px 10px;
+
+}
+
+#conocenos-section .mision-vision .col {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#conocenos-section .valores-container {
+    padding-bottom: 20px;
+}
+
+#conocenos-section .valores-container .col {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#conocenos-section .valores-container .col .valor--item {
+    background-color: var(--primary);
+    color: var(--light);
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 3px;
+    width: 200px;
+}
+
+#slider-section.slider-conocenos {
+    z-index: 100;
+}
+
+
+/*! ***************************************/
+/*? ****** Estilos planes-prenatales ******/
+/*! ***************************************/
+
+#planes-prenatales.container-fluid {
+    padding: 50px 0 100px 0;
+}
+
+#planes-prenatales .section__title {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+#planes-prenatales .cards .col{
+    display: flex;
+    justify-content: center;
+}
+
+#planes-prenatales .info {
+    margin-top: 60px;
+}
+
+#planes-prenatales .info li {
+    list-style: none;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#planes-prenatales .info li::before {
+    content: "►";
+	color: var(--primary);
+	/* display: inline-block; */
+    /* flex-direction:row; */
+	/* width: 1.5em; */
+	margin-left: -1em;
+    margin-right: 10px;
+}
+
+.iframe-prenatal {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    height: 580px;
+}
+
+@media screen and (max-width: 991px) {
+    #planes-prenatales .container {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .iframe-prenatal {
+        height: 530px;
+    }
+}
+
+/*? ***************************************/
+/** ************** SERVICIOS **************/
+/*! ***************************************/
+/*? ******** UNIDAD DE EMERGENCIAS ********/
+/*! ***************************************/
+
+#servicios.container-fluid {
+    background-color: #F4F4F4;
+    padding: 50px 0;
+}
+
+#servicios img {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+
+    #servicios #img {
+        border-left: 3px solid var(--primary);
+        padding-right: 20px;
+
+    }
+}
+
+
+/*! ***************************************/
+/*? *** Estilos Hospitalización section ***/
+/*! ***************************************/
+
+#hospitalizacion.container-fluid {
+    background-color: #F4F4F4;
+    padding: 0;
+}
+
+#hospitalizacion img {
+    width: 100%;
+}
+
+#hospitalizacion .block-1 {
+    position: relative;
+    transform: translateY(-150px);
+}
+
+#hospitalizacion .block-2 {
+    position: relative;
+    transform: translateY(-50px);
+    padding-bottom: 60px;
+}
+
+#hospitalizacion .estadia__container {
+    display: flex;
+    justify-content: center;
+    /* position: relative;
+    transform: translateY(-150px); */
+}
+
+#hospitalizacion .estadia__img {
+    padding: 10px;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color: rgba(var(--white-op) / 1);
+}
+
+#hospitalizacion .estadia__img img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}
+
+#hospitalizacion .description,
+#hospitalizacion .title {
+    padding: 5px 5px;
+}
+
+@media screen and (min-width: 992px) {
+    #habitaciones #img,
+    #salida #img {
+        border-right: 3px solid var(--primary);
+        padding-right: 20px;
+
+    }
+
+    #ingreso #img {
+        border-left: 3px solid var(--primary);
+        padding-left: 20px;
+    }
+}
+
+/*! ***************************************/
+/** *********** ESPECIALIDADES ************/
+/*! ***************************************/
+/*? ******* Estilos Cirugia General *******/
+/*! ***************************************/
+
+#cirugia-general.container-fluid {
+    padding: 80px 20px;
+}
+
+#cirugia-general p {
+    font-size: 20px;
+}
+
+#cirugia-general img {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    #cirugia-general img{
+        width: 100%;
+        margin: 0 auto 60px auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #cirugia-general img{
+        float: left;
+        width: 40%;
+        max-width: 400px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/*! ***************************************/
+/*? ********* Estilos Ginecologia *********/
+/*! ***************************************/
+
+#ginecologia.container-fluid {
+    padding: 80px 20px;
+}
+
+#ginecologia p {
+    font-size: 20px;
+}
+
+#ginecologia img {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    #ginecologia img{
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #ginecologia img{
+        float: left;
+        width: 50%;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/*! ***************************************/
+/*? ****** Estilos cirugia urologica ******/
+/*! ***************************************/
+
+#cirugia-urologica.container-fluid {
+    padding: 80px 20px;
+}
+
+#cirugia-urologica p {
+    font-size: 20px;
+}
+
+#cirugia-urologica img {
+
+    border-radius: 10px;
+
+    /* max-width: 650px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
+}
+
+@media screen and (max-width: 991px) {
+    #cirugia-urologica img{
+        width: 100%;
+        margin: 0 auto 60px auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #cirugia-urologica img{
+        float: left;
+        width: 60%;
+        /* max-width: 400px; */
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/*! ***************************************/
+/*? ***** Estilos cirugia oncologica ******/
+/*! ***************************************/
+
+
+#cirugia-oncologica.container-fluid {
+    padding: 80px 20px;
+}
+
+#cirugia-oncologica p {
+    font-size: 20px;
+}
+
+#cirugia-oncologica img {
+    border-radius: 10px;
+}
+
+#cirugia-oncologica ul {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+    #cirugia-oncologica img{
+        width: 100%;
+        margin: 0 auto 20px auto;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #cirugia-oncologica img{
+        float: left;
+        width: 50%;
+        margin-right: 30px;
+        /* margin-bottom: 350px; */
+    }
+
+    #cirugia-oncologica ul {
+        margin-left:54%;
+    }
+
+    #cirugia-oncologica.container-fluid {
+        height: calc(24rem + 7vw);
+    }
+}
+
+/*! ***************************************/
+/*? ***** Estilos cirugia ortopedica ******/
+/*! ***************************************/
+
+#cirugia-ortopedica.container-fluid {
+    padding: 80px 20px;
+}
+
+#cirugia-ortopedica p {
+    font-size: 20px;
+}
+
+#cirugia-ortopedica img {
+    border-radius: 10px;
+}
+
+#cirugia-ortopedica ul {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+    #cirugia-ortopedica img{
+        width: 100%;
+        margin: 0 auto 20px auto;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #cirugia-ortopedica img{
+        float: left;
+        width: 50%;
+        margin-right: 30px;
+        /* margin-bottom: 350px; */
+    }
+
+    #cirugia-ortopedica ul {
+        margin-left:54%;
+    }
+
+    #cirugia-ortopedica.container-fluid {
+        height: calc(28rem + 7vw);
+    }
+}
+
+/*! ***************************************/
+/*? **** Estilo especialidades medicas ****/
+/*! ***************************************/
+
+
+#es-medicas.container-fluid {
+    padding: 80px 20px;
+}
+
+#es-medicas .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+#es-medicas .grid-container img {
+    width: 100%;
+}
+
+#es-medicas p {
+    font-size: 20px;
+}
+
+#es-medicas img {
+    border-radius: 10px;
+}
+
+#es-medicas ul {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px){
+    #es-medicas .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+    }
+}
+
+@media screen and (max-width: 991px){
+    #es-medicas .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px){
+    #es-medicas .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+
+/*! ***************************************/
+/*? **** Estilos contact-cards-section ****/
+/*! ***************************************/
+
+#contact-cards-section.container-fluid {
+    transform: translateY(-80px);
+    padding: 0px;
+    z-index: 2;
+}
+
+#contact-cards-section .container {
+    position: relative;
+}
+
+#contact-cards-section .col {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-cards-section .Card {
+    height: 280px;
+}
+
+#contact-cards-section .Card .text3 {
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    #contact-cards-section .container {
+        transform: initial;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/*! ***************************************/
+/*? ********* Estilos formulario **********/
+/*! ***************************************/
+
+.iframe {
+    width: 100%;
+    height: 669px;
+}
+
+@media screen and (max-width: 991px) {
+    .iframe {
+        height: 1116px;
+    }
+}
+
+/*! ***************************************/
+/*? ****** Estilos Galerias de Fotos ******/
+/*! ***************************************/
+
+#galeria-habitaciones .card {
+    width: 100%;
+}
+
+/*! ***************************************/
+/*? ********* Estilos Seccion Blog ********/
+/*! ***************************************/
+
+#blog-content.container-fluid {
+    background-color: #F4F4F4;
+    padding: 0;
+    padding-block: 50px;
+}
+
+#blog-content .contenedor {
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+
+#blog-content .article__title {
+    font-style: italic;
+    /* margin-bottom: 20px; */
+    color: var(--secundary);
+}
+
+#blog-content .article__info {
+    margin-block: 20px;
+    color: var(--primary);
+}
+
+#blog-content .article__author {
+    margin: 0;
+}
+
+#blog-content .author__title,
+#blog-content .article__date {
+    margin: 0;
+    line-height: 1.2;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#blog-content img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 992px) {
+
+    #blog-content #block-1 #img,
+    #blog-content #block-3 #img {
+        border-left: 3px solid var(--primary);
+        padding-left: 20px;
+    }
+
+    #blog-content #block-2 #img,
+    #blog-content #block-4 #img {
+        border-right: 3px solid var(--primary);
+        padding-right: 20px;
+
+    }
+}

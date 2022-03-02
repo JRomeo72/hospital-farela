@@ -1,0 +1,56 @@
+    {{>head
+        con = "true"
+        banner="/img/fondo-parcial-img-4.jpg"
+        text1="Contáctanos"
+        text2="Comunicate, sera un placer poder atenderte."
+        section="blog"
+    }}
+
+    <section id="contact-cards-section" class="container-fluid ">
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 g-xl-3 d-flex justify-content-center">
+                <div class="col">
+        
+                    {{>card-not-img
+                        icon="fas fa-envelope"
+                        text1="Correo"
+                        text2="Puedes escribirnos y preguntar por nuestros servicios, te contestaremos en la brevedad posible"
+                        text3="info@hospitalfarela.com.sv"
+                    }}
+        
+                </div>
+                <div class="col">
+        
+                    {{>card-not-img
+                        icon="fas fa-map-marker-alt"
+                        text1="Dirección"
+                        text2="Sera un placer poder atenderte en nuestras instalaciones, puedes visitarnos en la siguiente direccióm:"
+                        text3="27 Av. Nte #1317 San Salvador, El Salvador"
+                    }}
+        
+                </div>
+                <div class="col">
+        
+                    {{>card-not-img
+                        icon="fas fa-phone-volume"
+                        text1="Teléfonos"
+                        text2="Llamanos y pregunta por nuestras planes de pago y por las especialidades en las que podemos atenderte"
+                        text3="PBX 2225-2133 y 2513-3771"
+                    }}
+        
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <iframe class="iframe" src="https://design-2u.com/tools/email-farela/" frameborder="0"></iframe>
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-contacto");
+        }, 500);
+
+    </script>

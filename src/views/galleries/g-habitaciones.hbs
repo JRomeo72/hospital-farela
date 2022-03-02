@@ -1,0 +1,72 @@
+<section id="galeria-habitaciones" class="container-fluid">
+    <div class="container my-5 pb-3">
+
+        <h2 Class="h2 text-center titulo-seccion animalo" data-animate-effect="fadeIn">Habitaciones</h2>
+        <br/>
+        <h4 class="text-center sub-titulo-seccion animalo" data-animate-effect="fadeIn">Habitación A</h4>
+
+        <div id="info" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 d-flex justify-content-center">
+
+            {{>item-gallery
+                galleryName="habitacion-A"
+                _url="/img/hospitalizacion/habitaciones/A/A-1.jpg"
+            }}
+            {{>item-gallery
+                galleryName="habitacion-A"
+                _url="/img/hospitalizacion/habitaciones/A/A-2.jpg"
+            }}
+            {{>item-gallery
+                galleryName="habitacion-A"
+                _url="/img/hospitalizacion/habitaciones/A/A-3.jpg"
+            }}
+            {{>item-gallery
+                galleryName="habitacion-A"
+                _url="/img/hospitalizacion/habitaciones/A/A-4.jpg"
+            }}
+
+        </div>
+
+        <br/>
+
+        <h4 class="text-center sub-titulo-seccion animalo" data-animate-effect="fadeIn">Habitación B</h4>
+
+        <div id="info" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 d-flex justify-content-center">
+
+            {{>item-gallery
+                galleryName="habitacion-B"
+                _url="/img/hospitalizacion/habitaciones/B/B-1.jpg"
+            }}
+            {{>item-gallery
+                galleryName="habitacion-B"
+                _url="/img/hospitalizacion/habitaciones/B/B-2.jpg"
+            }}
+            {{>item-gallery
+                galleryName="habitacion-B"
+                _url="/img/hospitalizacion/habitaciones/B/B-3.jpg"
+            }}
+            {{>item-gallery
+                galleryName="habitacion-B"
+                _url="/img/hospitalizacion/habitaciones/B/B-4.jpg"
+            }}
+            {{>item-gallery
+                galleryName="habitacion-B"
+                _url="/img/hospitalizacion/habitaciones/B/B-5.jpg"
+            }}
+            {{>item-gallery
+                galleryName="habitacion-B"
+                _url="/img/hospitalizacion/habitaciones/B/B-6.jpg"
+            }}
+
+        </div>
+
+        {{!-- <a href="javascript:goBack();" class="btn btn-primary mt-5 animalo" data-animate-effect="fadeIn">REGRESAR</a> --}}
+        <a href="#" onclick="goBack(); return false;" class="btn btn-primary mt-5 animalo" data-animate-effect="fadeIn">REGRESAR</a>
+
+    </div>
+</section>
+
+<script>
+    const goBack = () => {
+        window.history.back();
+    }
+</script>

@@ -1,0 +1,32 @@
+    {{>head
+        con = "false"
+        banner="/img/fondo-parcial-img-1.jpg"
+        text1="servicios"
+        text2="Nurseria."
+        section="servicios"
+    }}
+
+    <div id="servicios" class="container-fluid">
+        <div class="container">
+
+                <div id="u-emergencias" class="row animalo" data-animate-effect="fadeIn">
+
+                    <h1>Nursería</h1>
+                    <p>Tu bebé no puede estar en mejores manos. En nuestras instalaciones ponemos a disposición un área de Nursería para recién nacido, equipada con cunas térmicas e incubadoras para el manejo del recién nacidos que presente complicaciones.</p>
+
+                    <div class="slide-photos _shadow-bg-light-l">
+                        {{>sliders/slider}}
+                    </div>
+
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-nurseria", "._link-servicios");
+        }, 500);
+
+    </script>

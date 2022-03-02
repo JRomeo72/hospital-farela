@@ -1,0 +1,39 @@
+    {{>head
+        con = "false"
+        banner="/img/fondo-parcial-img-1.jpg"
+        text1="servicios"
+        text2="Unidad de ultrasonografía."
+        section="servicios"
+    }}
+
+    <div id="servicios" class="container-fluid">
+        <div class="container">
+
+                <div id="u-emergencias" class="row animalo" data-animate-effect="fadeIn">
+
+                    <h1>Unidad de ultrasonografía</h1>
+                    <p>Esta unidad nos permite servirte con ultrasonografías obstétricas y ginecológicas. Los servicios de ultras obstétricas y Pélvicas se presta en los horarios de lunes, miércoles y viernes de 11:00 a.m. a 12:00 p.m.; los martes de 11:00 a.m. a 1:00 p.m.<br><br>
+                        <strong>Los tipos de ultrasonografías:</strong>
+                    </p>
+                    <ul>
+                        <li>Embarazo</li>
+                        <li>Pélvica</li>
+                        <li>4D (únicamente los lunes, martes, miércoles y viernes)</li>
+                    </ul>
+                    <p><small>* Precios Accesibles, menores a los de otros hospitales privados.</small></p>
+
+                    <div class="slide-photos _shadow-bg-light-l">
+                        {{>sliders/slider}}
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        setTimeout(() => {
+            _linkActive("._link-ultra", "._link-servicios");
+        }, 500);
+
+    </script>

@@ -1,0 +1,34 @@
+<section id="slider-section" class="container-fluid animalo" data-animate-effect="fadeIn">
+    <div class="mask"></div>
+    <div class="container__slider">
+        <div class="slider" id="slider">
+
+            {{>item-slider
+                img="/img/Slider/slider-1.jpg"
+                text1="Tu procedimiento quirúrgico"
+                text2="Precios accesibles, calidad médica."
+            }}
+
+            {{>item-slider
+                img='/img/Slider/slider-2.jpg'
+                text1="Cirugía contra la obesidad y diabetes"
+                text2="Cirugía bariátrica y metabólica."
+            }}
+
+            {{>item-slider
+                img='/img/Slider/slider-3.jpg'
+                text1="Diagnóstico y tratamiento ginecológico"
+                text2="Atención por citas y emergencias."
+            }}
+
+            {{>item-slider
+                img='/img/Slider/slider-4.jpg'
+                text1="Conoce nuestros Planes Prenatales"
+                text2="Planifiquemos la llegada de tu bebé."
+            }}
+
+        </div>
+        <div class="slider__btn slider__btn--prev" id="prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="slider__btn slider__btn--next" id="next"><i class="fas fa-chevron-right"></i></div>
+    </div>
+</section>
