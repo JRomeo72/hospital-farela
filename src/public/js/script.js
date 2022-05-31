@@ -137,7 +137,7 @@ window.onload = function() {
         
         const removeClass = () => {
         
-            let _Class = document.querySelectorAll('.animated')
+            let _Class = document.querySelectorAll('.slider__element.animated')
             _Class.forEach( _element => {
                 _element.classList.add('hidden');
             } )

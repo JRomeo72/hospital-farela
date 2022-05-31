@@ -1,7 +1,20 @@
 <div class="slider__section" style="background-image:url('{{img}}');">
     <img src="{{img}}" alt="" class="slider__img">
-    <div class="slider__caption">
-        <h2 class="_shadow-bg-light-l animated fadeInDown hidden" data-animate-effect="fadeInDown">{{text1}}</h2>
-        <p class="_shadow-bg-light-l animated fadeInUp hidden" data-animate-effect="fadeInUp">{{text2}}</p>
-    </div>
+    {{#if visible}}
+        <div class="op-1 slider__caption">
+            <h2 class="slider__element _shadow-bg-light-l animated fadeInDown hidden">{{text1}}</h2>
+            <p class="slider__element _shadow-bg-light-l animated fadeInUp hidden">{{text2}}</p>
+        </div>
+    {{else}}
+        <div class="contenido">
+            <div class="slider__element left animated fadeIn hidden">
+                <img src="{{logos}}" alt="logos">
+            </div>
+            <div class="slider__element right animated fadeIn hidden">
+                 <img src="{{texts}}" alt="textos">
+            </div>
+        </div>
+    {{/if}}
+
+    
 </div>

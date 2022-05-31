@@ -4,11 +4,11 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const router = require('./routes')
 
-// ! Initializations
+// ? Initializations 
 const port = 4001;
 const app = express();
 
-// ! Settings
+// ? Settings 
 // app.set('port', process.env.PORT || 4000);
 app.set('port', port);
 app.set('views', path.join(__dirname, 'views'));
@@ -20,10 +20,10 @@ app.engine('hbs', exphbs({
 }));
 app.set('view engine', 'hbs');
 
-// ! Routes
+// ? Routes 
 app.use(router);
 
-// ! Statics
+// ? Statics 
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(sphp.express(path.join(__dirname, 'public')));
 
