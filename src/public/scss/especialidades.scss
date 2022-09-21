@@ -1,0 +1,199 @@
+/*! ***************************************/
+/** *********** ESPECIALIDADES ************/
+/*! ***************************************/
+/*? ******* Estilos Cirugia General *******/
+/*! ***************************************/
+
+#cirugia-general.container-fluid {
+    padding: 80px 20px;
+}
+
+#cirugia-general p {
+    font-size: 20px;
+}
+
+#cirugia-general img {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    #cirugia-general img{
+        width: 100%;
+        margin: 0 auto 60px auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #cirugia-general img{
+        float: left;
+        width: 40%;
+        max-width: 400px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/*! ***************************************/
+/*? ********* Estilos Ginecologia *********/
+/*! ***************************************/
+
+#ginecologia.container-fluid {
+    padding: 80px 20px;
+}
+
+#ginecologia p {
+    font-size: 20px;
+}
+
+#ginecologia img {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    #ginecologia img{
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #ginecologia img{
+        float: left;
+        width: 50%;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/*! ***************************************/
+/*? ****** Estilos cirugia urologica ******/
+/*! ***************************************/
+
+#cirugia-urologica.container-fluid {
+    padding: 80px 20px;
+}
+
+#cirugia-urologica p {
+    font-size: 20px;
+}
+
+#cirugia-urologica img {
+
+    border-radius: 10px;
+
+    /* max-width: 650px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
+}
+
+@media screen and (max-width: 991px) {
+    #cirugia-urologica img{
+        width: 100%;
+        margin: 0 auto 60px auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #cirugia-urologica img{
+        float: left;
+        width: 60%;
+        /* max-width: 400px; */
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/*! ***************************************/
+/*? ***** Estilos cirugia oncologica ******/
+/*! ***************************************/
+
+
+#cirugia-oncologica.container-fluid {
+    padding: 80px 20px;
+}
+
+#cirugia-oncologica p {
+    font-size: 20px;
+}
+
+#cirugia-oncologica img {
+    border-radius: 10px;
+}
+
+#cirugia-oncologica ul {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+    #cirugia-oncologica img{
+        width: 100%;
+        margin: 0 auto 20px auto;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #cirugia-oncologica img{
+        float: left;
+        width: 50%;
+        margin-right: 30px;
+        /* margin-bottom: 350px; */
+    }
+
+    #cirugia-oncologica ul {
+        margin-left:54%;
+    }
+
+    #cirugia-oncologica.container-fluid {
+        height: calc(24rem + 7vw);
+    }
+}
+
+/*! ***************************************/
+/*? ***** Estilos cirugia ortopedica ******/
+/*! ***************************************/
+
+#cirugia-ortopedica.container-fluid {
+    padding: 80px 20px;
+}
+
+#cirugia-ortopedica p {
+    font-size: 20px;
+}
+
+#cirugia-ortopedica img {
+    border-radius: 10px;
+}
+
+#cirugia-ortopedica ul {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+    #cirugia-ortopedica img{
+        width: 100%;
+        margin: 0 auto 20px auto;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #cirugia-ortopedica img{
+        float: left;
+        width: 50%;
+        margin-right: 30px;
+        /* margin-bottom: 350px; */
+    }
+
+    #cirugia-ortopedica ul {
+        margin-left:54%;
+    }
+
+    #cirugia-ortopedica.container-fluid {
+        height: calc(28rem + 7vw);
+    }
+}

@@ -1,0 +1,118 @@
+/*! ***************************************/
+/*? ***** Estilos qualities-section *******/
+/*! ***************************************/
+
+#qualities-section.container-fluid {
+    transform: translateY(-80px);
+    padding: 0px;
+    z-index: 2;
+}
+
+#qualities-section .container {
+    position: relative;
+}
+
+#qualities-section .col {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+    #qualities-section .container {
+        transform: initial;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/*! ***************************************/
+/*? ***** Estilos nosotros-section  *******/
+/*! ***************************************/
+
+#nosotros-section.container-fluid {
+    padding: 0;
+    margin-bottom: 80px;
+}
+
+#nosotros-section .foto-contenedor {
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+#nosotros-section .foto {
+    background-color: var(--primary);
+}
+
+#nosotros-section img {
+    width: 100%;
+    max-width: 350px;
+    transform: translate(20px, -20px);
+}
+
+#nosotros-section .texto {
+    max-width: 400px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #nosotros-section .col {
+        justify-content: center!important;
+    }
+
+    #nosotros-section .foto-contenedor {
+        position: absolute;
+        margin: 5px;
+    }
+
+    #nosotros-section .texto {
+        width: 95%;
+        max-width: 350px;
+        background-color: rgba(var(--light-op) / 0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        border: 1px solid #dee2e6;
+        z-index: 1;
+        margin-top: 350px;
+        box-shadow:
+            1px 2px 2px hsl(var(--shadow-color-bg-light) / 0.1),
+            2px 4px 4px hsl(var(--shadow-color-bg-light) / 0.1),
+            4px 8px 8px hsl(var(--shadow-color-bg-light) / 0.1),
+            8px 16px 16px hsl(var(--shadow-color-bg-light) / 0.1),
+            16px 32px 32px hsl(var(--shadow-color-bg-light) / 0.1)
+    }
+
+    #nosotros-section .texto p {
+        color: var(--dark);
+    }
+}
+
+.display-7{ font-size:calc(0.8rem + 1.2vw) }
+@media (min-width:1200px){ .display-7{font-size:1.7rem} }
+
+/*! ***************************************/
+/*? **** Estilos specialities-section *****/
+/*! ***************************************/
+
+#specialities-section.container-fluid,
+#blog-section.container-fluid {
+    padding: 50px 0 100px 0;
+}
+
+#specialities-section .section__title {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+#specialities-section .col,
+#blog-section .col {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+    #specialities-section .container,
+    #blog-section .container {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}

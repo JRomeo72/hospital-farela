@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Red+Hat+Text:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: #2898CB;
+	--primary-op: 40 152 203;
+	--secundary: #1D2A55;
+	--secundary-op: 29 42 85;
+	--hover: #F2B847;
+	--light: #E4F2FE;
+	--light-op: 228 242 254;
+	--dark: #1F1F1F;
+	--dark-op: 0.12 0.12 0.12;
+	--white: white;
+	--white-op: 255 255 255;
+	--shadow-color-bg-light: 0deg 0% 30%;
+	--shadow-color-bg-dark: 0deg 0% 0%;
+}
+
+html {
+	background-color: #eee;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #929292;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Red Hat Text', sans-serif;
+	line-height: 1.2;
+	font-weight: 700;
+	color: var(--secundary);
+}
+
+p {
+	text-align: justify;
+}
+
+.creditos {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    text-align: end;
+    /* position: relative;
+    padding-right: 20px;
+    transform: translateY(-30px); */
+}
+
+.creditos a {
+    /* background-color: black; */
+    color: #929292;
+    /* padding: 5px; */
+    /* position: absolute; */
+}
+
+.animalo {
+    opacity: 0;
+}
+
+/*! ***************************************/
+/*? ****** Estilos Galerias de Fotos ******/
+/*! ***************************************/
+
+#galeria-habitaciones .card {
+    width: 100%;
+}

@@ -157,7 +157,7 @@ window.onload = function() {
         const intervalInit = () => {
             _init = setInterval(() => {
                 Next()
-            }, 10000 );
+            }, 60000 );
         }
         
         const intervalStop = () => {

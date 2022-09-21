@@ -1,0 +1,64 @@
+/*! ***************************************/
+/*? ********* Estilos Parallax  ***********/
+/*! ***************************************/
+
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 500px;
+	left: 0;
+	/* overflow: hidden; */
+	position: absolute;
+	/* top: 0; */
+	width: 100%;
+	z-index: 1;
+    background-color: #2898CB;
+}
+
+.parallax {
+    background-image: url('/img/parallax-img.jpeg');
+	position: fixed;
+	/* top: 0; */
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+    
+	/* BG behaviour */
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax__container .mask {
+    background-color: rgba(var(--dark-op) / 0.2);
+    height: 100%;
+    /* padding: 12rem 0; */
+    position: relative;
+    z-index: 100;
+}
+
+.parallax__container .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parallax__container .contenido {
+    padding: 15px 40px;
+    border-radius: 5px;
+    max-width: 1000px;
+    background-color: rgba(var(--dark-op) / 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.parallax__container h2 {
+    font-size: 36px;
+    color: var(--light);
+}
+
+.parallax__container p{
+    font-size: 20px;
+}

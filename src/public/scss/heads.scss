@@ -1,0 +1,120 @@
+/*! ***************************************/
+/*? ****** Estilos de head global *********/
+/*! ***************************************/
+
+.section__header {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section__title {
+	font-size: 36px;
+	padding-bottom: 10px;
+}
+
+.section__subtitle {
+	font-size: 55px;
+}
+
+.section__icon {
+	font-size: calc(1rem + 0.5vw)!important;
+	color: var(--secundary);
+	text-align: center;
+}
+
+.section__icon i {
+	font-size: calc(2rem + 0.8vw);
+	margin: 0 20px;
+	color: var(--primary);
+}
+
+@media (max-width: 1920px) {
+
+    .section__title {
+        font-size: calc(1rem + 1vw);
+    }
+    
+    .section__subtitle {
+        font-size: calc(1.7rem + 1.5vw);
+    }
+
+}
+
+/*! ***************************************/
+/*? ****** Estilos de head section ********/
+/*! ***************************************/
+
+#head.container-fluid {
+    position: relative;
+    padding-bottom: 75px;
+    background-position: right;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+#head.container-fluid {
+    background-color: #C8CAC7;
+}
+
+#head.container-fluid.servicios {
+    background-color: #ffffff;
+}
+
+#head.container-fluid.especialidades {
+    background-color: #99D3DE;
+}
+
+#head.container-fluid.blog {
+    background-color: #779BC5;
+}
+
+#head .mask {
+    position: absolute;
+    background-color: rgba(var(--primary-op) / 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#head .contenedor {
+    /* display: flex; */
+    padding-top: 70px;
+    /* align-items: center; */
+}
+
+/* #head .section__header h2, */
+#head .section__header h3 {
+/* #head .section__header p { */
+    color: var(--light)!important;
+}
+
+#head .section__title {
+    color: var(--secundary)!important;
+    text-transform: uppercase;
+}
+
+#head .section__icon {
+    color: var(--secundary);
+}
+
+#head .section__icon i {
+    margin: 0 20px;
+    color: var(--white);
+}
+
+#head .true.padin-bottom {
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 767px) {
+    #head.container-fluid.servicios {
+        background-position: left;
+    }
+    #head.container-fluid {
+        background-position: center;
+    }
+}

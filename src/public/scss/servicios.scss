@@ -1,0 +1,23 @@
+/*? ***************************************/
+/** ************** SERVICIOS **************/
+/*! ***************************************/
+/*? ******** UNIDAD DE EMERGENCIAS ********/
+/*! ***************************************/
+
+#servicios.container-fluid {
+    background-color: #F4F4F4;
+    padding: 50px 0;
+}
+
+#servicios img {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+
+    #servicios #img {
+        border-left: 3px solid var(--primary);
+        padding-right: 20px;
+
+    }
+}

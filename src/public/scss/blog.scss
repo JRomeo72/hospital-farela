@@ -1,0 +1,59 @@
+/*! ***************************************/
+/*? ********* Estilos Seccion Blog ********/
+/*! ***************************************/
+
+#blog-content.container-fluid {
+    background-color: #F4F4F4;
+    padding: 0;
+    padding-block: 50px;
+}
+
+#blog-content .contenedor {
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+
+#blog-content .article__title {
+    font-style: italic;
+    /* margin-bottom: 20px; */
+    color: var(--secundary);
+}
+
+#blog-content .article__info {
+    margin-block: 20px;
+    color: var(--primary);
+}
+
+#blog-content .article__author {
+    margin: 0;
+}
+
+#blog-content .author__title,
+#blog-content .article__date {
+    margin: 0;
+    line-height: 1.2;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#blog-content img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 992px) {
+
+    #blog-content #block-1 #img,
+    #blog-content #block-3 #img {
+        border-left: 3px solid var(--primary);
+        padding-left: 20px;
+    }
+
+    #blog-content #block-2 #img,
+    #blog-content #block-4 #img {
+        border-right: 3px solid var(--primary);
+        padding-right: 20px;
+
+    }
+}

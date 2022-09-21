@@ -1,0 +1,94 @@
+/*! ***************************************/
+/*? ***** Estilos conocenos section *******/
+/*! ***************************************/
+
+#conocenos-section.container-fluid {
+    padding: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    position: relative;
+}
+
+#conocenos-section .all-containers {
+    position: relative;
+    transform: translateY(-150px);
+}
+
+#conocenos-section .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: rgba(var(--secundary-op) / 0.5); */
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+}
+
+#conocenos-section .history {
+    padding-bottom: 100px;
+}
+
+#conocenos-section .building--container,
+#conocenos-section .foto--container {
+    display: flex;
+    justify-content: center;
+
+}
+
+#conocenos-section .building--img,
+#conocenos-section .foto--img {
+    padding: 10px;
+    max-width: 1000px;
+    border-radius: 5px;
+    background-color: rgba(var(--white-op) / 1);
+    backdrop-filter: blur(10px);
+}
+
+#conocenos-section .building--img img,
+#conocenos-section .foto--img img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}
+
+#conocenos-section .description, .title {
+    padding: 5px 5px;
+}
+
+#conocenos-section .mision-vision {
+    background-color: #F4F4F4;
+    padding: 100px 10px 100px 10px;
+
+}
+
+#conocenos-section .mision-vision .col {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#conocenos-section .valores-container {
+    padding-bottom: 20px;
+}
+
+#conocenos-section .valores-container .col {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#conocenos-section .valores-container .col .valor--item {
+    background-color: var(--primary);
+    color: var(--light);
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 3px;
+    width: 200px;
+}
+
+#slider-section.slider-conocenos {
+    z-index: 100;
+}

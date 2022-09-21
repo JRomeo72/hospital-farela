@@ -1,0 +1,50 @@
+/*! ***************************************/
+/*? ******** Estilos de sombras ***********/
+/*! ***************************************/
+
+._shadow-bg-light-m {
+    box-shadow:
+		1px 2px 2px hsl(var(--shadow-color-bg-light) / 0.1),
+		2px 4px 4px hsl(var(--shadow-color-bg-light) / 0.1),
+		4px 8px 8px hsl(var(--shadow-color-bg-light) / 0.1)
+}
+
+._shadow-bg-light-l {
+    box-shadow:
+		1px 2px 2px hsl(var(--shadow-color-bg-light) / 0.1),
+		2px 4px 4px hsl(var(--shadow-color-bg-light) / 0.1),
+		4px 8px 8px hsl(var(--shadow-color-bg-light) / 0.1),
+		8px 16px 16px hsl(var(--shadow-color-bg-light) / 0.1),
+		16px 32px 32px hsl(var(--shadow-color-bg-light) / 0.1)
+}
+
+._shadow-bg-light-b {
+	box-shadow:
+		0px 2px 2px hsl(var(--shadow-color-bg-light) / 0.1),
+		0px 4px 4px hsl(var(--shadow-color-bg-light) / 0.1),
+		0px 8px 8px hsl(var(--shadow-color-bg-light) / 0.1),
+		0px 16px 16px hsl(var(--shadow-color-bg-light) / 0.1),
+		0px 32px 32px hsl(var(--shadow-color-bg-light) / 0.1)
+}
+
+._shadow-bg-light-i-t {
+	box-shadow:
+		0px 2px 2px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px 4px 4px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px 8px 8px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px 16px 16px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px 32px 32px hsl(var(--shadow-color-bg-light) / 0.2) inset
+}
+
+._shadow-bg-light-i-b {
+	box-shadow:
+		0px -2px 2px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px -4px 4px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px -8px 8px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px -16px 16px hsl(var(--shadow-color-bg-light) / 0.2) inset,
+		0px -32px 32px hsl(var(--shadow-color-bg-light) / 0.2) inset
+}
+
+.espacio {
+    height: 2000px;
+}

@@ -1,0 +1,57 @@
+/*! ***************************************/
+/*? ******* Estilos card-not-img **********/
+/*! ***************************************/
+
+.Card {
+    max-width: 500px;
+    transition: all 350ms ease;
+    border-radius: 5px;
+}
+
+.Card .icon {
+    font-size: 46px;
+    color: var(--primary);
+    margin-right: 20px;
+}
+
+.Card:hover {
+    background-color: var(--secundary)!important;
+    color: var(--light);
+}
+
+.Card:hover .icon,
+.Card:hover h3,
+.Card:hover h5 {
+    color: var(--light);
+}
+
+/*! ***************************************/
+/*? ******* Estilos card-with-img *********/
+/*! ***************************************/
+
+.card {
+    max-width: 450px!important;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card .card-body {
+    padding: 10px 5px;
+}
+
+.card .btn {
+    background-color: var(--primary);
+    transition: background-color 650ms ease;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+}
+
+.card .btn:hover {
+    background-color: var(--secundary);
+}
