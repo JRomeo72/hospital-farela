@@ -1597,6 +1597,7 @@ p {
 /* Bloque 3 */
 #footer .info__location__icon {
   color: var(--primary);
+  margin-right: 8px;
 }
 
 /* Bloque 4 */
